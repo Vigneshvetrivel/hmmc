@@ -32,6 +32,44 @@
 	<!-- loginstyle -->
 	<style>
 
+	    #zoom {
+	  padding:20px;
+	  transition:transform .1s;
+	  width:50px;
+	  height:50px;
+	  margin:0 auto;
+	}
+
+	#zoom:hover {
+	  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+
+
+			.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+
 		.liststyle{
     font-size: 25px;
   font-weight: bold;
@@ -52,6 +90,9 @@
   text-decoration: inherit;
   font-family: serif;
 }
+.new{
+	border-radius: 25px;
+}
 	</style>
 
 
@@ -60,10 +101,19 @@
 </head>
 
 
-<body style="background-color:#dfd3c3">
-	<div class="site-content">
-		<header style="background-color:#dfd3c3"class="site-header">
-			<div class="container">
+<body style="background-image:url('images/p.jpg');width:100%">
+
+
+
+
+
+
+
+
+
+	<div  class="site-content">
+		<header style="background-image:url('images/p.jpg')"class="site-header">
+			<div  class="container">
 						<h3 class="liststyle1"  style="text-align:center;color:#8f7655">
 					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"  </h3>
 				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
@@ -71,7 +121,7 @@
 					<img src="images/logo.png" alt="" class="logo">
 
 				</a>
-					<h3 style="font-weight:bold" class="maintitle">Henry Merriweather Memorial church <br> Kurichi</h3>
+					<h3 style="font-size:35px;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 
 			</div>
 
@@ -92,7 +142,8 @@
 				</div>
 		</header> <!-- .site-header -->
 
-
+<br>
+<br>
 		<!-- UC -->
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	    <ol class="carousel-indicators">
@@ -103,29 +154,37 @@
 	      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 	      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 	      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+				 <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
 	    </ol>
 			<div class="container">
 	    <div class="carousel-inner">
 	      <div class="carousel-item active">
-	        <img class="d-block w-100" src="images/slide-1.jpg" alt="First slide">
+	        <img class="d-block w-100 new" src="images/slide-1.jpg" alt="First slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/55.jpg" alt=" slide">
+	        <img class="d-block w-100 new" src="images/55.jpg" alt=" slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/old1.jpg" alt="Second slide">
+	        <img class="d-block w-100 new" src="images/old1.jpg" alt="Second slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/old2.jpg" alt="Third slide">
+	        <img class="d-block w-100 new" src="images/old2.jpg" alt="Third slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/old3.jpg" alt="Fourth slide">
+	        <img class="d-block w-100 new" src="images/old3.jpg" alt="Fourth slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/slide-2.jpg" alt="Fifth slide">
+	        <img class="d-block w-100 new" src="images/old4.jpg" alt="Fifth slide">
 	      </div>
 	      <div class="carousel-item">
-	        <img class="d-block w-100" src="images/gate.jpg" alt="Sixth slide">
+	        <img class="d-block w-100 new" src="images/old5.jpg" alt="Sixth slide">
+	      </div>
+				<div class="carousel-item">
+	        <img class="d-block w-100 new" src="images/slide-2.jpg" alt="Sixth slide">
+	      </div>
+				<div class="carousel-item">
+	        <img class="d-block w-100 new" src="images/gate.jpg" alt="Sixth slide">
 	      </div>
 	    </div>
 		</div>
@@ -149,19 +208,24 @@
 			<tbody>
 											<tr>
 												<td>
-						 <marquee direction="up" height="200" scrollamount="2" scrolldelay="150" class="sidelink" onmousedown="this.stop()" onmouseover="this.stop()" onmousemove="this.stop()" onmouseout="this.start()" vspace="10">
+<br>
 	<div style="width:100%" class="container">
 
 		<div class="row">
 			<div style="text-align:center" class="col-md-12">
-					<h1 style="font-family: serif;color:red">UPDATES</h1>
-<div style="border:solid;background-color:#1b262c"class="container">
+					<h2 style="font-family: serif;color:Red">NEW PROJECT</h2>
+					<br>
+<div style="background-image:url('images/q.jpg')"class="container new">
 	<div class="col-md-12">
 		<br>
-		<h3 style=" font-family:serif">NO UPDATES</h3>
-					<center>	<p style="Text-align:justify;font-family: serif;color:red;font-size:20px"><span class="sidelink">
-						            No Updates
+		<h3 style=" font-family:serif;color:black"></h3>
+					<center>	<p style="Text-align:justify;font-family: serif;color:black;font-size:20px"><span class="sidelink">
+						         🏛️ Empowering Our Vision: Join Hands for Our New Cathedral🏛️
 						 </p></center>
+						 <br>
+
+					 	<li class="menu-item"><a href="churchprojects.html">	<h1 style="text-align:center"> <button style="width:50%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">CATHEDRAL</button></h1></a></li></center>
+
 									<br>
 </div>
 
@@ -181,20 +245,25 @@
 	</tbody>
 
 			<div class="fullwidth-block">
-				<div class="container">
+					<div style="background-image:url('images/q.jpg');border-radius:25px;padding:40px" class="container">
 					<h1 style="font-family: serif;color:black">VISION OF THE CHURCH</h1>
 						<hr>
 					<p class="fsize" style="Text-align:justify">
-						Kurichi Merriweather Memorial Church was founded in 1912. In 2020 the fourth generation of Christian believers are still worshipping the Lord in the church.
-						Kurichi village is surrounded by 35 small villages which have not yet been reached with the Gospel of Jesus Christ. In 2014 the church began to share the Gospel with these unreached villages.
-						In recent years some Kurichi village Christians migrated for employment to different parts of India, including a number of families who moved to Erode, the administrative Headquarters of Erode District but never joined any local church.
-						The
-						Christians at Kurichi have been burdened to remember the Diaspora especially in different parts of Tamil Nadu so they can feel part of and be supported by the parent church in Kurichi.
-						The vision of the church is to reach the unreached people in the surrounding villages and to build seven churches for village people before the Second Coming of Christ. The second vision of the church is to shepherd the Diaspora of the
-						Kurichi Christian Community and to establish churches for them.
+					Kurichi Merriweather Memorial Church was founded in 1912. In 2020 the fourth generation of Christian believers are still worshipping the Lord in the church. Kurichi village is surrounded by 35 small villages which have not yet been reached with the Gospel of Jesus Christ. In 2014 the church began to share the Gospel with these unreached villages.As the result of the ministry that we have new souls in the church and they have an unchanging love for Christ Jesus. We do pray earnestly for these new believers and the rest of the village’s flocks to turn their ways and to become the followers of Christ Jesus.  These villages are having community ups and downs.  So our ultimate vision of our church is to build a church for each individual community.  For community development we need to extend the social improvement projects as per the need from time to time.
+					<br>
+				</p>
+				<hr>
+					<p class="fsize" style="Text-align:justify">
+					In recent years some Kurichi village Christians migrated for employment to different parts of India, including a number of families who moved to Erode, the administrative Headquarters of Erode District. The Christians at Kurichi have been burdened to remember the Diaspora especially in different parts of Tamil Nadu so they can feel part of and be supported by the parent church in Kurichi.
+					<br>
+				</p>
+				<hr>
+					<p class="fsize" style="Text-align:justify">
+					The vision of the church is to reach the unreached people in the surrounding villages.
 					</p>
 				</div>
-				<div class="container">
+				<br>
+				<div style="background-image:url('images/q.jpg');border-radius:25px;padding:40px" class="container">
 					<h1 style=" font-family: serif">About CIGM</h1>
 					<hr>
 					<p class="fsize" style="Text-align:justify">The Ceylon and India General mission in short now called as CIG mission was founded in 1883 by a Christian business man Mr. Davidson who had a vision for the spiritual needs of Ceylon. This missionary movement met at the famous Keswick
@@ -204,6 +273,27 @@
 				</div>
 		</main> <!-- .main-content -->
 
+		<div class="social-sidebar">
+				<!-- YouTube widget -->
+				<a href="https://www.youtube.com/" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
+				</a>
+
+				<!-- Location widget -->
+				<a href="https://www.google.com/maps/" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
+				</a>
+
+				<!-- Email widget -->
+				<a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
+				</a>
+
+				<!-- WhatsApp widget -->
+				<a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
+				</a>
+		</div>
 
 		<footer style="background-color:#1b262c" class="site-footer">
 
@@ -233,7 +323,9 @@
             <button style="width:100%" type="button" class="btn btn-outline:dark">
               <p style="padding-top:3%" class="liststyle2">EVENTS</p>
             </button>
-          </a
+          </a>
+
+
 
           <a href="History.html">
             <button style="width:100%" type="button" class="btn btn-outline:dark">
