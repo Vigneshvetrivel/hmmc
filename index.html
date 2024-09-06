@@ -12,6 +12,7 @@
 
 	<!-- Loading main css file -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 	<!-- favicon -->
 	    <link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
 	<!--[if lt IE 9]>
@@ -27,7 +28,7 @@
 
 	<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
 	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+<script src="js/popup.js" defer></script>
 
 	<!-- loginstyle -->
 	<style>
@@ -91,7 +92,9 @@
   font-family: serif;
 }
 .new{
+	background-image:url('images/q.jpg');
 	border-radius: 25px;
+
 }
 	</style>
 
@@ -113,14 +116,17 @@
 
 	<div  class="site-content">
 		<header style="background-image:url('images/p.jpg')"class="site-header">
-			<div  class="container">
-						<h3 class="liststyle1"  style="text-align:center;color:#8f7655">
-					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"  </h3>
+				<div class="container">
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
 				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
 				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
-					<img src="images/logo.png" alt="" class="logo">
+					<img style="height:220px;width:200px" src="images/logo.png" alt="" class="logo">
 
 				</a>
+        <br>
+        <br>
 					<h3 style="font-size:35px;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 
 			</div>
@@ -131,7 +137,9 @@
 						<li  class="menu-item current-menu-item "><a href="index.html"><p class="liststyle1">Home</p></a></li>
 						<li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
 						<li class="menu-item"><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+						<li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
 						<li class="menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
+						<li class="menu-item"><a href="gallery.html"><p class="liststyle1">GALLERY</p></a></li>
 						<li class="menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
 						<li class="menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
 						<li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
@@ -209,31 +217,13 @@
 											<tr>
 												<td>
 <br>
-	<div style="width:100%" class="container">
-
-		<div class="row">
-			<div style="text-align:center" class="col-md-12">
-					<h2 style="font-family: serif;color:Red">NEW PROJECT</h2>
-					<br>
-<div style="background-image:url('images/q.jpg')"class="container new">
-	<div class="col-md-12">
-		<br>
-		<h3 style=" font-family:serif;color:black"></h3>
-					<center>	<p style="Text-align:justify;font-family: serif;color:black;font-size:20px"><span class="sidelink">
-						         🏛️ Empowering Our Vision: Join Hands for Our New Cathedral🏛️
-						 </p></center>
-						 <br>
-
-					 	<li class="menu-item"><a href="churchprojects.html">	<h1 style="text-align:center"> <button style="width:50%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">CATHEDRAL</button></h1></a></li></center>
-
-									<br>
-</div>
 
 
-			</div>
-		</div>
 
-	</div>
+
+
+
+
 
 
 
@@ -245,7 +235,8 @@
 	</tbody>
 
 			<div class="fullwidth-block">
-					<div style="background-image:url('images/q.jpg');border-radius:25px;padding:40px" class="container">
+				<div class = "container">
+					<div style="background-image:url('images/q.jpg');border-radius:25px;padding:25px" class="container">
 					<h1 style="font-family: serif;color:black">VISION OF THE CHURCH</h1>
 						<hr>
 					<p class="fsize" style="Text-align:justify">
@@ -262,8 +253,10 @@
 					The vision of the church is to reach the unreached people in the surrounding villages.
 					</p>
 				</div>
+			</div>
 				<br>
-				<div style="background-image:url('images/q.jpg');border-radius:25px;padding:40px" class="container">
+				<div class = "container">
+				<div style="background-image:url('images/q.jpg');border-radius:25px;padding:25px" class="container">
 					<h1 style=" font-family: serif">About CIGM</h1>
 					<hr>
 					<p class="fsize" style="Text-align:justify">The Ceylon and India General mission in short now called as CIG mission was founded in 1883 by a Christian business man Mr. Davidson who had a vision for the spiritual needs of Ceylon. This missionary movement met at the famous Keswick
@@ -271,6 +264,7 @@
 						setup at Bangalore which is functioning even today. The work of CIGM extended thereafter to east and West Pakistan and Nepal. With much struggle and diabolic activities the CIGM could establish the kingdom of God around the globe.
 					</p>
 				</div>
+			</div>
 		</main> <!-- .main-content -->
 
 		<div class="social-sidebar">
@@ -295,9 +289,9 @@
 				</a>
 		</div>
 
-		<footer style="background-color:#1b262c" class="site-footer">
-
-		     <div style="padding:0 5%" class=row>
+		<footer style="background-color:#1b262c;height:100%">
+      <br>
+      <div style="padding:0 5%" class=row>
         <div style="text-align:center" class="col-md-4">
           <a href="index.html">
             <button style="width:100%" type="button" class="btn btn-outline:dark">
@@ -318,6 +312,7 @@
           </a>
 
         </div>
+
         <div style="text-align:center" class="col-md-4">
           <a href="events.html">
             <button style="width:100%" type="button" class="btn btn-outline:dark">
@@ -325,7 +320,12 @@
             </button>
           </a>
 
+          <a href="gallery.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+            </button>
 
+          </a>
 
           <a href="History.html">
             <button style="width:100%" type="button" class="btn btn-outline:dark">
@@ -333,16 +333,17 @@
             </button>
           </a>
 
-            <a href="henrymerriweather.html">
-              <button style="width:100%" type="button" class="btn btn-outline:dark">
-                <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
-              </button>
-
-            </a>
 
         </div>
 
         <div style="text-align:center" class="col-md-4">
+
+                      <a href="henrymerriweather.html">
+                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+                        </button>
+
+                      </a>
           <a href="Aboutus.html">
             <button style="width:100%" type="button" class="btn btn-outline:dark">
               <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
@@ -352,10 +353,14 @@
         </div>
         <br>
       </div>
-		    <br>
-	    <div class="col-lg-12">
-	      	<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 CIGM Merriweather Memorial church. All right reserved</p>
-	  </footer><!-- .site-footer -->
+  <br>
+  <hr>
+  <br>
+		 <!-- .row -->
+				<br>
+				<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 Henry Merriweather Memorial church. All right reserved</p>
+			</div><!-- .container -->
+		</footer> <!-- .site-footer -->
 
 	</div>
 

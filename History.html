@@ -14,6 +14,7 @@
 
 	<!-- Loading main css file -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 	<!-- favicon -->
       <link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
 	<!--[if lt IE 9]>
@@ -24,7 +25,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/popup.js" defer></script>
 <style>
+
+	    #zoom {
+	  padding:20px;
+	  transition:transform .1s;
+	  width:50px;
+	  height:50px;
+	  margin:0 auto;
+	}
+
+	#zoom:hover {
+	  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+
+
+			.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+
    		.liststyle{
     font-size: 25px;
   font-weight: bold;
@@ -45,30 +86,57 @@
 	text-decoration: inherit;
 	font-family: serif;
 }
+.new{
+	background-image:url('images/q.jpg');
+	border-radius: 25px;
+	padding: 25px;
+}
+.image-card {
+		position: relative;
+		overflow: hidden;
+}
+.image-card img {
+		transition: transform 0.3s;
+		border-radius: 20px;
+}
+.image-card:hover img {
+		transform: scale(1.1);
+}
 
 </style>
 </head>
 
 
-<body style="background-color:#dfd3c3">
+<body style="background-image:url('images/p.jpg')">
+
+
+
+
+
+
 	<div class="site-content">
-		<header style="background-color:#dfd3c3"class="site-header">
-			<div class="container">
-						<h3 class="liststyle1"  style="text-align:center;color:#8f7655">
-					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"  </h3>
+		<header style="background-image:url('images/p.jpg')"class="site-header">
+				<div class="container">
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
 				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
 				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
-					<img src="images/logo.png" alt="" class="logo">
+					<img style="height:220px;width:200px" src="images/logo.png" alt="" class="logo">
 
 				</a>
-					<h3 style="font-weight:bold" class="maintitle">Henry Merriweather Memorial church <br> Kurichi</h3>
+        <br>
+        <br>
+					<h3 style="font-weight:bold;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 				<div class="main-navigation">
-					<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
+					<button style="color:black" class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 					<ul class="menu">
-						<li  class="menu-item"><a href="index.html"><p class="liststyle1">Home</p></a></li>
+						<li  class="menu-item  "><a href="index.html"><p class="liststyle1">Home</p></a></li>
 						<li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
 						<li class="menu-item"><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+						<li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
 						<li class="menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
+						<li class="menu-item"><a href="gallery.html"><p class="liststyle1">GALLERY</p></a></li>
 						<li class="menu-item current-menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
 						<li class="menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
 						<li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
@@ -85,7 +153,70 @@
 			</div>
 		</div>
 		<br>
-		<div class="container">
+		<hr>
+		<br>
+
+
+
+		<div class="container mt-5">
+		<div class="row">
+				<div class="col-md-3">
+						<div class="image-card">
+								<a href="images/z1.jpg" download target="_blank">
+										<img src="images/z1.jpg" class="img-fluid" alt="Image 1">
+								</a>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="image-card">
+								<a href="images/z2.jpg" download target="_blank">
+										<img src="images/z2.jpg" class="img-fluid" alt="Image 2">
+								</a>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="image-card">
+								<a href="images/z3.jpg" download target="_blank">
+										<img src="images/z3.jpg" class="img-fluid" alt="Image 3">
+								</a>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+						<div class="image-card">
+								<a href="images/z5.jpg" download target="_blank">
+										<img src="images/z5.jpg" class="img-fluid" alt="Image 4">
+								</a>
+						</div>
+				</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div class="row mt-4 justify-content-center">
+				<div class="col-md-3">
+						<div class="image-card">
+								<a href="images/z4.jpg" download target="_blank">
+										<img src="images/z4.jpg" class="img-fluid" alt="Image 5">
+								</a>
+						</div>
+				</div>
+		</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+		<br>
+		<hr>
+		<br>
+
+<div class="container">
+		<div class="container new">
 		    <br>
 			<h1 style="font-family:serif;text-align:center">The history of Kurichi church.</h1>
 			<hr>
@@ -109,10 +240,15 @@
 
 				We seek your prayer, support and cooperation for the further growth of our CIGM Merriweather Memorial church Kurichi, in all the fields specially in enriching our people spiritually and socially. We praise God for His faithfulness.
 			</p>
-			<br><hr>
+			<br>
 
 		</div>
+	</div>
+		<br>
+		<hr>
+		<br>
 		<div class="container">
+		<div class="container new">
 			<h1 style="font-family:serif;text-align:center">Establishment</h1>
 		<br>
 			<p class="fsize" style="font-family:serif;Text-align:justify">
@@ -132,77 +268,119 @@ Soon after the baptism of the priestess Cholera broke out, and the villagers cam
 An outcaste widow's son from this village, a poor sickly fellow, was taken into the boarding home and the Missionary who took him in, and has mothered him, has been well rewarded. He has been the pastor of our largest Tamil Church for many years. Two of our finest Bible-women, who are working among Muslims, are daughters of two of the first Christians of that village.
 
 			</p>
-	<br><hr><br>
-		</div>
 
+		</div>
+	</div>
+<br>
 
 
 
 		</main> <!-- .main-content -->
 	<button style="margin-left:40%;width:20%" class="button" onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 	<br>
+	<br>
 
-		<footer style="background-color:#1b262c;height:100%">
-			<div style="padding:0 5%" class=row>
-				<div style="text-align:center" class="col-md-4">
-					<a href="index.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HOME</p>
-						</button>
+	<!-- Widgets -->
+
+			<div class="social-sidebar">
+					<!-- YouTube widget -->
+					<a href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
 					</a>
 
-					<a href="pastor.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">PASTOR</p>
-						</button>
+					<!-- Location widget -->
+					<a href="https://goo.gl/maps/uvbrz8bkKrWh5kCJ7" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
 					</a>
 
-					<a href="churchprojects.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
-						</button>
+					<!-- Email widget -->
+					<a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
 					</a>
 
-				</div>
-				<div style="text-align:center" class="col-md-4">
-					<a href="events.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">EVENTS</p>
-						</button>
+					<!-- WhatsApp widget -->
+					<a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
 					</a>
-
-					<a href="History.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HISTORY</p>
-						</button>
-					</a>
-
-						<a href="henrymerriweather.html">
-							<button style="width:100%" type="button" class="btn btn-outline:dark">
-								<p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
-							</button>
-
-						</a>
-
-				</div>
-
-				<div style="text-align:center" class="col-md-4">
-					<a href="Aboutus.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">ABOUT US</p>
-						</button>
-					</a>
-
-				</div>
-				<br>
 			</div>
-	<br>
 
-		<p style="text-align:center;color:grey;font-size:15px"><span>&#169;</span> 2023 CIGM Merriweather Memorial church. All right reserved</p>
+			<!-- Widgets -->
 
-	<br>
 
-		</footer>   <!-- .site-footer -->
+
+
+			<footer style="background-color:#1b262c;height:100%">
+	      <br>
+	      <div style="padding:0 5%" class=row>
+	        <div style="text-align:center" class="col-md-4">
+	          <a href="index.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">HOME</p>
+	            </button>
+	          </a>
+
+	          <a href="pastor.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">PASTOR</p>
+	            </button>
+	          </a>
+
+	          <a href="churchprojects.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
+	            </button>
+	          </a>
+
+	        </div>
+
+	        <div style="text-align:center" class="col-md-4">
+	          <a href="events.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">EVENTS</p>
+	            </button>
+	          </a>
+
+	          <a href="gallery.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+	            </button>
+
+	          </a>
+
+	          <a href="History.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">HISTORY</p>
+	            </button>
+	          </a>
+
+
+	        </div>
+
+	        <div style="text-align:center" class="col-md-4">
+
+	                      <a href="henrymerriweather.html">
+	                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+	                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+	                        </button>
+
+	                      </a>
+	          <a href="Aboutus.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
+	            </button>
+	          </a>
+
+	        </div>
+	        <br>
+	      </div>
+	  <br>
+	  <hr>
+	  <br>
+			 <!-- .row -->
+					<br>
+					<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 Henry Merriweather Memorial church. All right reserved</p>
+				</div><!-- .container -->
+			</footer> <!-- .site-footer -->
 
 
 

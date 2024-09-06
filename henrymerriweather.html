@@ -14,6 +14,7 @@
 
 	<!-- Loading main css file -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 	<!-- favicon -->
       <link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
 	<!--[if lt IE 9]>
@@ -24,8 +25,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script src="js/popup.js" defer></script>
 <style>
+
+	    #zoom {
+	  padding:20px;
+	  transition:transform .1s;
+	  width:50px;
+	  height:50px;
+	  margin:0 auto;
+	}
+
+	#zoom:hover {
+	  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+
+
+			.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+
    		.liststyle{
     font-size: 25px;
   font-weight: bold;
@@ -46,31 +86,47 @@
 	text-decoration: inherit;
 	font-family: serif;
 }
+.new{
+	background-image:url('images/q.jpg');
+	border-radius: 25px;
+	padding: 25px;
+}
 
 
 </style>
 </head>
 
 
-<body style="background-color:#dfd3c3">
+<body style="background-image:url('images/p.jpg')">
+
+
+
+
+
+
 	<div class="site-content">
-		<header style="background-color:#dfd3c3" class="site-header">
-			<div class="container">
-						<h3 class="liststyle1"  style="text-align:center;color:#8f7655">
-					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"  </h3>
+		<header style="background-image:url('images/p.jpg')" class="site-header">
+				<div class="container">
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
 				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
 				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
-					<img src="images/logo.png" alt="" class="logo">
+					<img style="height:220px;width:200px" src="images/logo.png" alt="" class="logo">
 
 				</a>
-					<h3 style="font-weight:bold" class="maintitle">Henry Merriweather Memorial church <br> Kurichi</h3>
+        <br>
+        <br>
+					<h3 style="font-weight:bold;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 				<div class="main-navigation">
-					<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
+					<button style="color:black" class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 					<ul class="menu">
-						<li  class="menu-item"><a href="index.html"><p class="liststyle1">Home</p></a></li>
+						<li  class="menu-item  "><a href="index.html"><p class="liststyle1">Home</p></a></li>
 						<li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
 						<li class="menu-item"><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+						<li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
 						<li class="menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
+						<li class="menu-item"><a href="gallery.html"><p class="liststyle1">GALLERY</p></a></li>
 						<li class="menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
 						<li class="menu-item current-menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
 						<li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
@@ -87,20 +143,34 @@
 			</div>
 		</div>
 		<br>
+		<hr>
+<br>
 
-		<div class="container">
+
+<div class = "container">
+		<div class="container new">
+
 			<p style="text-align:center"class="fsize">‘With Flaming Zeal’ Lionel Fitzsimons ©1998 Ambassador Publications Belfast</p>
 			<h1 style="text-align:center">
 Henry Merriweather
 1884 – 1977
 <br>
 <hr>
-<img style="width:300px;border-radius:50%" src="images\harry1.jpg" alt="harry">
+<img style="width:300px;border-radius:40%" src="images\harry1.jpg" alt="harry">
 </h1>
-<hr>
-	</div>
-<div style="Text-align:justify" class="container">
 
+</div>
+	</div>
+
+
+
+	<br>
+	<hr>
+	<br>
+
+	<div class = "container">
+<div style="Text-align:justify" class="container new">
+<br>
 	<p class="fsize">
 
 	Henry Merriweather, as he was always called, is another link person to the present day. His long life began on 16th January 1884. It spanned the lingering death of colonialism, the triumph of nationalisms, and the resurgence of old religions. The first era began before he was born, and was accompanied by great revivals of Evangelical Christianity. Harry himself was powerfully affected by the movement which broke out with renewed power in Wales in 1904. It was a time of clear cut issues and standards.In North Yorkshire too, religion was a very vital thing. He was brought up on a farm near the large village of Masham. Two generations of his Wesleyan Methodist family had already given missionaries to the Church. "What memories the thought of that Chapel revives! Memories of great local preachers who preached in the power of the Spirit in the vernacular, of praying saints and hearty congregational singing. To this day", he wrote in old age, "the singing of certain hymns takes me back, and I fancy I hear them being sung to the twitter of the sand martins as they darted in and out around the Chapel windows".
@@ -127,7 +197,7 @@ Along with two older C.I.G.M. missionaries and one other recruit, he sailed on 1
 
 <div class="row">
 	<div class="col-lg-12">
-		<img class="img2" src="images\old3.jpg" alt="pic">
+		<img style="border-radius:25px" class="img2" src="images\old3.jpg" alt="pic">
 		<br>
 	</div>
 </div>
@@ -156,7 +226,7 @@ This well known literary hostess numbered among her protégés W. B. Yeats, who 
 <div class="row">
 	<div class="col-lg-4">
 		<br>
-		<img class="img3"src="images\pair.jpg" alt="PAIR">
+		<img style="border-radius:25px" class="img3"src="images\pair.jpg" alt="PAIR">
 	</div>
 <div class="col-lg-8">
 	<p class="fsize">
@@ -202,7 +272,7 @@ This well known literary hostess numbered among her protégés W. B. Yeats, who 
 <div class="row">
 	<div class="col-lg-4">
 		<br>
-		<img class="img4"src="images\man.jpg" alt="MAN">
+		<img style="border-radius:25px" class="img4"src="images\man.jpg" alt="MAN">
 	</div>
 	<div class="col-lg-8">
 		<p class="fsize">
@@ -252,22 +322,24 @@ Merriweather himself passed away in his sleep at Brooklands Missionary Home, Coo
 
 </p>
 </div>
+</div>
 	</p>
 </div>
 
 
 		</div>
-		<div class="container">
-		    <hr>
+		<div class="container new">
+
 		<p class="fsize" style="Text-align:center;color:red">'Ten thousand thanks to Jesus <br>
 Whose life our ransom paid <br>
 Whose blood a full atonement <br>
 For all the world has made...'
 </p>
-<hr>
-</div>
 
-<div class="container">
+</div>
+<br>
+
+<div class="container new">
 	<p class="fsize">1 Corinthians 15 was read first in English and then in Tamil by Pastor Gurubatham who is at present pastor at Gobichettipalyam.
 
 	As we stood by the graveside we were challenged afresh to serve our generation as Mr. Merriweather served his. We shall not see his like again. It was the end of an era."
@@ -281,64 +353,106 @@ For all the world has made...'
 		</main> <!-- .main-content -->
 	<button style="margin-left:40%;width:20%" class="button" onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
-		<footer style="background-color:#1b262c"class="site-footer">
-		    		<div style="padding:0 5%" class=row>
-				<div style="text-align:center" class="col-md-4">
-					<a href="index.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HOME</p>
-						</button>
-					</a>
+<br>
 
-					<a href="pastor.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">PASTOR</p>
-						</button>
-					</a>
+<!-- Widgets -->
 
-					<a href="churchprojects.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
-						</button>
-					</a>
+		<div class="social-sidebar">
+				<!-- YouTube widget -->
+				<a href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
+				</a>
 
-				</div>
-				<div style="text-align:center" class="col-md-4">
-					<a href="events.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">EVENTS</p>
-						</button>
-					</a>
+				<!-- Location widget -->
+				<a href="https://goo.gl/maps/uvbrz8bkKrWh5kCJ7" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
+				</a>
 
-					<a href="History.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HISTORY</p>
-						</button>
-					</a>
+				<!-- Email widget -->
+				<a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
+				</a>
 
-						<a href="henrymerriweather.html">
-							<button style="width:100%" type="button" class="btn btn-outline:dark">
-								<p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
-							</button>
+				<!-- WhatsApp widget -->
+				<a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+						<img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
+				</a>
+		</div>
+<br>
+		<!-- Widgets -->
 
-						</a>
+		<footer style="background-color:#1b262c;height:100%">
+      <br>
+      <div style="padding:0 5%" class=row>
+        <div style="text-align:center" class="col-md-4">
+          <a href="index.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">HOME</p>
+            </button>
+          </a>
 
-				</div>
+          <a href="pastor.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">PASTOR</p>
+            </button>
+          </a>
+
+          <a href="churchprojects.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
+            </button>
+          </a>
+
+        </div>
+
+        <div style="text-align:center" class="col-md-4">
+          <a href="events.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">EVENTS</p>
+            </button>
+          </a>
+
+          <a href="gallery.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+            </button>
+
+          </a>
+
+          <a href="History.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">HISTORY</p>
+            </button>
+          </a>
+
+
+        </div>
+
+        <div style="text-align:center" class="col-md-4">
+
+                      <a href="henrymerriweather.html">
+                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+                        </button>
+
+                      </a>
+          <a href="Aboutus.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
+            </button>
+          </a>
+
+        </div>
+        <br>
+      </div>
+  <br>
+  <hr>
+  <br>
+		 <!-- .row -->
 				<br>
-
-				<div style="text-align:center" class="col-md-4">
-					<a href="Aboutus.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">ABOUT US</p>
-						</button>
-					</a>
-
-				</div>
-				<br>
-			</div>
-	    <div class="col-lg-12">
-	      	<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 CIGM Merriweather Memorial church. All right reserved</p>
-	  </footer>
+				<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 Henry Memorial church. All right reserved</p>
+			</div><!-- .container -->
+		</footer> <!-- .site-footer -->
 
 <script>
 function topFunction() {

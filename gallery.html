@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--hover-->
+
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    	<title>Henry Merriweather Memorial church.</title>
+
+    	<!-- Loading third party fonts -->
+    	<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
+    	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    	<!-- Loading main css file -->
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="style1.css">
+    	<!-- favicon -->
+    	<link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
+    	<!--[if lt IE 9]>
+    		<script src="js/ie-support/html5.js"></script>
+    		<script src="js/ie-support/respond.js"></script>
+    		<![endif]-->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/popup.js" defer></script>
+
+    </head>
+
+
+    <style>
+			.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+
+    .mySlides {
+      width: 100%;
+      height: auto;
+    }
+
+    .liststyle{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration:inherit;
+  font-family:serif;
+  }
+  .liststyle1{
+  font-size: 15px;
+  font-weight: bold;
+  color:grey;
+  text-decoration:inherit;
+  font-family:serif;
+  }
+  .liststyle2 {
+	font-size: 16px;
+	font-weight:normal;
+	color: #dfd3c3;
+	text-decoration: inherit;
+	font-family: serif;
+}
+
+    #zoom {
+  padding:20px;
+  transition:transform .1s;
+  width:50px;
+  height:50px;
+  margin:0 auto;
+}
+
+#zoom:hover {
+  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.liststyle2 {
+  font-size: 16px;
+  font-weight:normal;
+  color:#dfd3c3;
+  text-decoration: inherit;
+  font-family: serif;
+}
+
+.gallery-item {
+
+           padding: 10px;
+           position: relative;
+           overflow: hidden;
+           cursor: pointer;
+       }
+
+       .gallery-item img {
+           transition: transform 0.3s ease;
+           max-width: 100%;
+           max-height:100%;
+           height: auto;
+       }
+
+       .gallery-item:hover img {
+           transform: scale(1.1);
+       }
+       .new{
+       	background-image:url('images/q.jpg');
+       	border-radius: 40px;
+       	padding: 40px;
+       }
+       .n{
+         border-radius: 40px;
+       }
+    </style>
+
+
+   <!--hover-->
+
+
+
+<body style="background-image:url('images/p.jpg')">
+
+  <!-- Widgets -->
+
+      <div class="social-sidebar">
+          <!-- YouTube widget -->
+          <a href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w" target="_blank" class="social-icon">
+              <img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
+          </a>
+
+          <!-- Location widget -->
+          <a href="https://goo.gl/maps/uvbrz8bkKrWh5kCJ7" target="_blank" class="social-icon">
+              <img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
+          </a>
+
+          <!-- Email widget -->
+          <a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+              <img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
+          </a>
+
+          <!-- WhatsApp widget -->
+          <a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+              <img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
+          </a>
+      </div>
+
+      <!-- Widgets -->
+
+	<div class="site-content">
+		<header style="background-image:url('images/p.jpg')" class="site-header">
+			<div class="container">
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
+				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
+				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
+					<img style="height:200px;width:200px" src="images/logo.png" alt="" class="logo">
+
+				</a>
+        <br>
+        <br>
+					<h5 style="font-weight:bold;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h5>
+
+				<div class="main-navigation">
+					<button style="color:black" class="menu-toggle"><i class="fa fa-bars"></i>Menu</button>
+					<ul class="menu">
+            <li  class="menu-item "><a href="index.html"><p class="liststyle1">Home</p></a></li>
+            <li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
+            <li class="menu-item"><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+            <li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
+            <li class="menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
+            <li class="menu-item current-menu-item"><a href="gallery.html"><p class="liststyle1">GALLERY</p></a></li>
+            <li class="menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
+            <li class="menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
+            <li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
+					</ul>
+				</div>
+
+				<div class="mobile-navigation"></div>
+			</div>
+		</header> <!-- .site-header -->
+		<div class="page-head" data-bg-image="images/page-head-1.jpg">
+			<div class="container">
+				<h2 style="font-family:serif" class="page-title">GALLERY</h2>
+			</div>
+		</div>
+
+
+<div>
+
+/
+<br>
+<div class="container">
+       <div class="container new custom-gallery">
+           <h3 style="text-align:center; font-family: serif; color: black;">
+               Youth team fellowship 2024
+               <br>
+               <hr>
+               <br>
+               <center>
+
+                   <img src="Gallery\964.jpg" style="width:70%" class="gallery-item" src="Gallery\964.jpg" alt="youth team" target="_blank">
+
+               </center>
+           </h3>
+       </div>
+   </div>
+<br>
+<div class="container">
+    <div class="custom-gallery new">
+
+        <h3 style="text-align:center;font-family: serif;color:black">GIFTS FOR CHRISTMAS CELEBRATION</h3>
+        <p style="text-align:center;font-family: serif;color:black;font-size:20px">2023. </p>
+
+        <hr>
+              <a href="https://drive.google.com/drive/folders/1NziADXE3uZu8ZteMbO7kHrGzFrsjzExC?usp=sharing" target="_blank">
+
+                  <center><img src="images/1972.png" alt="Image" width="200"></center>
+              </a>
+  </div>
+</div>
+
+  <br>
+
+  <br>
+
+<br>
+
+<br>
+<div class="container">
+    <div class="custom-gallery new">
+
+        <h3 style="text-align:center;font-family: serif;color:black">CHRISTMAS CAROL</h3>
+        <p style="text-align:center;font-family: serif;color:black;font-size:20px">2023. </p>
+
+        <hr>
+
+        <a href="https://drive.google.com/drive/folders/1x4RMdOHhVGPPMk0322m5Z6Xu6RWcHelX?usp=sharing" target="_blank">
+
+            <center><img src="images/1972.png" alt="Image" width="200"></center>
+        </a>
+  </div>
+</div>
+
+  <br>
+
+  <br>
+  <div class="container">
+      <div class="custom-gallery new">
+
+          <h3 style="text-align:center;font-family: serif;color:black">BFT CHURCH, ERODE.</h3>
+          <p style="text-align:center;font-family: serif;color:black;font-size:20px">Tenth Year Anniversary. </p>
+
+          <hr>
+          <a href="https://drive.google.com/drive/folders/12VM8yYYJ8VB90D-5uxEkCHSLMVRONB5r?usp=sharing" target="_blank">
+
+              <center><img src="images/1972.png" alt="Image" width="200"></center>
+          </a>
+    </div>
+  </div>
+
+    <br>
+
+    <br>
+    <!-- ... -->
+    <div class="container">
+
+        <div class="container new">
+
+          <h3 style="text-align:center;font-family: serif;color:black">HONOUR CEREMONY FOR THE RETIRED MEMBERS OF CHURCH</h3>
+<hr>
+<a href="https://drive.google.com/drive/folders/1_gvSIdhrbftat03DbmTxuyS9ygLqftGv?usp=sharing" target="_blank">
+
+    <center><img src="images/1972.png" alt="Image" width="200"></center>
+</a>
+    </div>
+    <div>
+<br>
+
+<br>
+<div class="container new">
+
+
+        <h3 style="text-align:center;font-family: serif;color:black">SPIRTUAL GATHERING - MERRYWEATHER ALL SAINTS CHURCH</h3>
+        <h5 style="text-align:center;font-family: serif;color:black">METTUR</h4>
+
+        <hr>
+        <a href="https://drive.google.com/drive/folders/1wZhJ3O22BUwSlFJWs-MeyO1YK9tMWqLl?usp=sharing" target="_blank">
+
+            <center><img src="images/1972.png" alt="Image" width="200"></center>
+        </a>
+
+  </div>
+
+  <br>
+
+  <br>
+  <div class="container new">
+
+
+          <h3 style="text-align:center;font-family: serif;color:black">THANKSGIVING FROM MERRIWEATHER ALL SAINTS CHURCH</h3>
+          <h5 style="text-align:center;font-family: serif;color:black">Vengadeshapuram</h4>
+
+          <hr>
+          <a href="https://drive.google.com/drive/folders/1UiJzgZL2mhCW4yUQ-8vyhGRQ-FfymmZq?usp=sharing" target="_blank">
+
+              <center><img src="images/1972.png" alt="Image" width="200"></center>
+          </a>
+      </div>
+
+		<!-- UPDATES -->
+		<div class="container">
+			<br><hr><br>
+		</div>
+		<br>
+    <footer style="background-color:#1b262c;height:100%">
+      <br>
+      <div style="padding:0 5%" class=row>
+        <div style="text-align:center" class="col-md-4">
+          <a href="index.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">HOME</p>
+            </button>
+          </a>
+
+          <a href="pastor.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">PASTOR</p>
+            </button>
+          </a>
+
+          <a href="churchprojects.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
+            </button>
+          </a>
+
+        </div>
+
+        <div style="text-align:center" class="col-md-4">
+          <a href="events.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">EVENTS</p>
+            </button>
+          </a>
+
+          <a href="gallery.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+            </button>
+
+          </a>
+
+          <a href="History.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">HISTORY</p>
+            </button>
+          </a>
+
+
+        </div>
+
+        <div style="text-align:center" class="col-md-4">
+
+                      <a href="henrymerriweather.html">
+                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+                        </button>
+
+                      </a>
+          <a href="Aboutus.html">
+            <button style="width:100%" type="button" class="btn btn-outline:dark">
+              <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
+            </button>
+          </a>
+
+        </div>
+        <br>
+      </div>
+  <br>
+  <hr>
+  <br>
+		 <!-- .row -->
+				<br>
+				<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 CIGM Merriweather Memorial church. All right reserved</p>
+			</div><!-- .container -->
+		</footer> <!-- .site-footer -->
+
+
+<script>
+	var myIndex = 0;
+	var myIndez = 0;
+	carousel();
+	carousele();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}
+	  x[myIndex-1].style.display = "block";
+	  setTimeout(carousel, 3000); // Change image every 2 seconds
+	}
+	function carousele() {
+		var j;
+		var y = document.getElementsByClassName("mySlides1");
+		for (j= 0; j < y.length; j++) {
+			y[j].style.display = "none";
+		}
+		myIndez++;
+		if (myIndez > y.length) {myIndez = 1}
+		y[myIndez-1].style.display = "block";
+		setTimeout(carousele, 3000); // Change image every 2 seconds
+	}
+	</script>
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

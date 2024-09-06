@@ -14,6 +14,7 @@
 
 	<!-- Loading main css file -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 	<!-- favicon -->
 	<link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
 	<!--[if lt IE 9]>
@@ -24,9 +25,45 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script src="js/popup.js" defer></script>
 
 	<style>
+		.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+		    #zoom {
+	  padding:20px;
+	  transition:transform .1s;
+	  width:50px;
+	  height:50px;
+	  margin:0 auto;
+	}
+
+	#zoom:hover {
+	  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+
 		.liststyle {
 			font-size: 25px;
 			font-weight: bold;
@@ -49,47 +86,48 @@
 			text-decoration: inherit;
 			font-family: serif;
 		}
+		.new{
+			background-image:url('images/q.jpg');
+			border-radius: 25px;
+			padding:30px;
+		}
+
 	</style>
 </head>
 
 
-<body style="background-color:#dfd3c3">
+<body style="background-image:url('images/p.jpg')">
+
+
+
+
 	<div class="site-content">
-		<header style="background-color:#dfd3c3" class="site-header">
-			<div class="container">
-				<h3 class="liststyle1" style="text-align:center;color:#8f7655">
-					"Upon this rock I will build my church;and the gates of hell shall not prevail against it" </h3>
-				<h5 class="liststyle1" style="text-align:center;color:grey">mathew 16:18</h5>
+		<header style="background-image:url('images/p.jpg')" class="site-header">
+				<div class="container">
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
+				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
 				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
-					<img src="images/logo.png" alt="" class="logo">
+					<img style="height:220px;width:200px" src="images/logo.png" alt="" class="logo">
 
 				</a>
-				<h3 style="font-weight:bold" class="maintitle">Henry Merriweather Memorial church <br> Kurichi</h3>
+        <br>
+        <br>
+				<h3 style="font-weight:bold;font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 
 				<div class="main-navigation">
 					<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 					<ul class="menu">
-						<li class="menu-item"><a href="index.html">
-								<p class="liststyle1">Home</p>
-							</a></li>
-						<li class="menu-item"><a href="pastor.html">
-								<p class="liststyle1">PASTOR</p>
-							</a></li>
-						<li class="menu-item current-menu-item"><a href="churchprojects.html">
-								<p class="liststyle1">CHURCH PROJECTS</p>
-							</a></li>
-						<li class="menu-item"><a href="events.html">
-								<p class="liststyle1">EVENTS</p>
-							</a></li>
-						<li class="menu-item"><a href="History.html">
-								<p class="liststyle1">HISTORY</p>
-							</a></li>
-						<li class="menu-item"><a href="henrymerriweather.html">
-								<p class="liststyle1">HENRY MERRIWEATHER</p>
-							</a></li>
-						<li class="menu-item"><a href="Aboutus.html">
-								<p class="liststyle1">ABOUT US</p>
-							</a></li>
+						<li  class="menu-item"><a href="index.html"><p class="liststyle1">Home</p></a></li>
+						<li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
+						<li class="menu-item current-menu-item "><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+						<li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
+						<li class="menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
+						<li class="menu-item"><a href="gallery.html"><p class="liststyle1">GALLERY</p></a></li>
+						<li class="menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
+						<li class="menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
+						<li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
 					</ul>
 
 				</div>
@@ -105,31 +143,53 @@
 			</div>
 		</div>
 		<br>
+		<br>
+
+		<div class="container new">
+<br>
+	<h1 style="font-family: serif;">	Support Our Church Projects
+	</h1>
+	<br>
+
+<p class="fsize" style="font-family: serif;Text-align:justify">
+We invite you to be a part of our church's journey of faith and service by contributing to our ongoing projects. Your donation will help us create a nurturing space for worship, extend a helping hand to those in need, and strengthen our community's bonds. No matter the amount, your contribution makes a significant impact in advancing our mission. Join us in spreading love, hope, and compassion. Together, we can build a brighter future for all. Thank you for your generosity and unwavering support.</p>
+<br>
+	<center>
+		<img style="height: 200px; width: 200px" src="images/QR.jpeg" alt="QR CODE">
+	</center>
+
+	<p class="fsize" style="text-align:center;font-family:serif"><br>Contact No:(+91)-9698044055.</p>
+	</div>
 
 
+
+<br>
+<hr>
+<br>
 		<div class="container">
 			<h1 style="font-family: serif;">CHURCH PROJECTS</h1>
-			<hr>
+			<br>
 			<!-- EDUCATIONAL REQUIREMENTS -->
 			<br>
+
 			<div class="container">
-				<h3 style="font-family: serif;text-align:center">EDUCATIONAL REQUIREMENTS</h3>
+				<h1 style="text-align:center"> <button style="width:50%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">EDUCATIONAL REQUIREMENTS</button></h1>
 			</div>
-			<p style="text-align:center"> <button style="width:25%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Get More Info</button></p>
+
 
 			<br>
 
-			<div id="demo2" class="collapse">
+			<div  id="demo2" class="collapse container new">
 				<div class="col-md-6">
-					<p style="text-align:center"><img style="width:100%;height:100%" src="children.jpg" alt="CHILDREN"></p>
+					<p style="text-align:center"><img style="width:100%;height:100%" src="images\children.jpg" alt="CHILDREN"></p>
 					<h3 style="font-family: serif;text-align:center">FEES DETAILS</h3>
 					<h6 style="font-family: serif;text-align:center">DOWNLOAD THE PDF</h6>
-					<a target="_blank" href="CIGM STUDENTS LIST_090449.pdf"><button type="button" class="button but"><b>CLICK HERE</b></button></a>
+					<a target="_blank" href="docs\CIGM STUDENTS LIST_090449.pdf"><button type="button" class="button but"><b>CLICK HERE</b></button></a>
 
 				</div>
-				<br>
 				<div class="col-md-6">
 					<h4 style="font-family: serif;">Empower Christian Children: Support Education, Change Lives!</h4>
+					<br>
 					<p class="fsize1" style="font-family: serif;Text-align:justify">
 
 	We believe in the power of education to transform lives. Help us make a difference by supporting underprivileged Christian children on their educational journey. Your donation, big or small, can open doors to brighter futures and create lasting change. Together, let's empower these young minds and build a better tomorrow. Join us in our mission today and be a beacon of hope for Christian children in need. Donate now and make an impact that lasts a lifetime! Thank you for your generosity.
@@ -137,26 +197,31 @@
 					<center>
 						<p class="fsize1">Thank you.</p>
 					</center>
-					<p class="nfm1 fsize1">Yours sincerely,<br> the Lord’s humble servant,<br>Wilson Bruce. A.</p>
+
 
 					</p>
 					<br>	<br>
-						<br><hr>
+
 						</div>
 						</div>
+
+						<br>
 			<!-- gospelvan -->
 			<br>
 			<div class="container">
-				<h3 style="font-family: serif;text-align:center">GOSPEL VAN</h3>
+
+					<h1 style="text-align:center"> <button style="width:50%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">GOSPEL VAN</button></h1>
 			</div>
-			<p style="text-align:center"> <button style="width:25%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Get More Info</button></p>
+
 			<br>
 
-			<div id="demo1" class="collapse">
+			<div id="demo1" class="collapse container new">
 				<div class="col-md-6">
 					<p style="text-align:center"><img style="width:100%;height:40%" src="images/van.jpg" alt="gospel van"></p>
 				</div>
 				<div class="col-md-6">
+					<h4 style="font-family:serif">SOWING SEEDS OF GRACE: FUNDRAISING FOR A GOSPEL VAN</h4>
+					<br>
 					<p class="fsize1" style="font-family: serif;Text-align:justify">
 						The Kurichi church ministry is among the poor but we are strong in faith. We are praying for the surrounding villages which have not yet been reached with the Gospel of Jesus Christ. The surrounding village people are bound by community
 						rituals, idol worship, poverty, illiteracy, and spiritual darkness. I kindly request you to pray for these people that they may open their hearts towards Christ Jesus. Prayer Brings Victory.
@@ -165,87 +230,172 @@
 					<center>
 						<p class="fsize1">Thank you.</p>
 					</center>
-					<p class="nfm1 fsize1">Yours sincerely,<br> the Lord’s humble servant,<br>Wilson Bruce. A.</p>
+
 
 					</p>
 
 
-
-			<hr>
 
 					<br>
 				</div>
 <br>
 
 			</div>
+
+<br>
+
+		<!--CATHEDRAL
+
+		<br>
+		<div class="container">
+
+				<h1 style="text-align:center"> <button style="width:50%" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">CATHEDRAL</button></h1>
+		</div>
+
+		<br>
+
+		<div  id="demo3" class="collapse container new">
+			<div class="col-md-6">
+
+				<p style="text-align:center"><img style="width:100%;height:40%" src="images\OIP.jpg" alt="Cathedral"></p>
+			</div>
+			<div class="col-md-6">
+					<h4 style="font-family:serif">Sacred Aspirations: Building a Spiritual Haven for Our Community</h4>
+					<br>
+				<p  style="font-size: 125%;font-family: serif;Text-align:justify">
+					The time has come to construct a new cathedral that can house our growing community and provide a sanctuary for our spiritual endeavors.
+
+		With a budget of 10 crores, as we aim to create a cathedral that not only accommodates but elevates the collective spirit of our community.
+
+		This new cathedral will stand as a testament to our shared faith, unity, and dedication. It will be a space where generations will gather to seek solace, share joys, and strengthen their connection to our rich heritage.
+
+		We urge you to join us in this transformative project. Your contributions, whether in the form of support, volunteering, or spreading the word, will play a pivotal role in bringing our collective dream to fruition.
+				</p>
+				<center>
+					<p class="fsize1">Thank you.</p>
+				</center>
+
+
+				</p>
+
+	-->
+
+
+
+<br>
+
+
+
+					<br>
+				</div>
+	<br>
+
+			</div>
+
+
 		</div>
 	</div>
 
 	<hr><br>
 
+	<!-- Widgets -->
 
-
-	<footer style="background-color:#1b262c;height:100%">
-		<div style="padding:0 5%" class=row>
-			<div style="text-align:center" class="col-md-4">
-				<a href="index.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">HOME</p>
-					</button>
-				</a>
-
-				<a href="pastor.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">PASTOR</p>
-					</button>
-				</a>
-
-				<a href="churchprojects.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
-					</button>
-				</a>
-
-			</div>
-			<div style="text-align:center" class="col-md-4">
-				<a href="events.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">EVENTS</p>
-					</button>
-				</a>
-
-				<a href="History.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">HISTORY</p>
-					</button>
-				</a>
-
-					<a href="henrymerriweather.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
-						</button>
-
+			<div class="social-sidebar">
+					<!-- YouTube widget -->
+					<a href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
 					</a>
 
+					<!-- Location widget -->
+					<a href="https://goo.gl/maps/uvbrz8bkKrWh5kCJ7" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
+					</a>
+
+					<!-- Email widget -->
+					<a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
+					</a>
+
+					<!-- WhatsApp widget -->
+					<a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+							<img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
+					</a>
 			</div>
 
-			<div style="text-align:center" class="col-md-4">
-				<a href="Aboutus.html">
-					<button style="width:100%" type="button" class="btn btn-outline:dark">
-						<p style="padding-top:3%" class="liststyle2">ABOUT US</p>
-					</button>
-				</a>
+			<!-- Widgets -->
 
-			</div>
-			<br>
-		</div>
-<br>
+			<footer style="background-color:#1b262c;height:100%">
+	      <br>
+	      <div style="padding:0 5%" class=row>
+	        <div style="text-align:center" class="col-md-4">
+	          <a href="index.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">HOME</p>
+	            </button>
+	          </a>
 
-	<p style="text-align:center;color:grey;font-size:15px"><span>&#169;</span> 2023 CIGM Merriweather Memorial church. All right reserved</p>
+	          <a href="pastor.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">PASTOR</p>
+	            </button>
+	          </a>
 
-<br>
+	          <a href="churchprojects.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
+	            </button>
+	          </a>
 
-	</footer>  <!-- .site-footer -->
+	        </div>
+
+	        <div style="text-align:center" class="col-md-4">
+	          <a href="events.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">EVENTS</p>
+	            </button>
+	          </a>
+
+	          <a href="gallery.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+	            </button>
+
+	          </a>
+
+	          <a href="History.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">HISTORY</p>
+	            </button>
+	          </a>
+
+
+	        </div>
+
+	        <div style="text-align:center" class="col-md-4">
+
+	                      <a href="henrymerriweather.html">
+	                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+	                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+	                        </button>
+
+	                      </a>
+	          <a href="Aboutus.html">
+	            <button style="width:100%" type="button" class="btn btn-outline:dark">
+	              <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
+	            </button>
+	          </a>
+
+	        </div>
+	        <br>
+	      </div>
+	  <br>
+	  <hr>
+	  <br>
+			 <!-- .row -->
+					<br>
+					<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 Henry Merriweather Memorial church. All right reserved</p>
+				</div><!-- .container -->
+			</footer> <!-- .site-footer -->
 
 
 

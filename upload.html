@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Upload</title>
+</head>
+<body>
+  <h1>Event Upload</h1>
+  <form id="eventForm">
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName" required><br><br>
+
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" required><br><br>
+
+    <label for="eventTime">Event Time:</label>
+    <input type="time" id="eventTime" required><br><br>
+
+    <label for="eventDescription">Event Description:</label><br>
+    <textarea id="eventDescription" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="button" value="Upload Event" onclick="addEvent()">
+  </form>
+
+  <h2>Event List</h2>
+  <table id="eventTable" border="1">
+    <tr>
+      <th>Event Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Description</th>
+    </tr>
+  </table>
+
+  <script>
+    function addEvent() {
+      const eventName = document.getElementById("eventName").value;
+      const eventDate = document.getElementById("eventDate").value;
+      const eventTime = document.getElementById("eventTime").value;
+      const eventDescription = document.getElementById("eventDescription").value;
+
+      const table = document.getElementById("eventTable");
+      const newRow = table.insertRow(-1);
+      const cell1 = newRow.insertCell(0);
+      const cell2 = newRow.insertCell(1);
+      const cell3 = newRow.insertCell(2);
+      const cell4 = newRow.insertCell(3);
+
+      cell1.innerHTML = eventName;
+      cell2.innerHTML = eventDate;
+      cell3.innerHTML = eventTime;
+      cell4.innerHTML = eventDescription;
+
+      // Clear form fields
+      document.getElementById("eventName").value = "";
+      document.getElementById("eventDate").value = "";
+      document.getElementById("eventTime").value = "";
+      document.getElementById("eventDescription").value = "";
+    }
+  </script>
+</body>
+</html>

@@ -10,9 +10,11 @@
 		<!-- Loading third party fonts -->
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style1.css">
 		<!-- favicon -->
 	      <link rel="icon" href="images\favi.jpg" type="image/jpg" sizes="16x16">
 		<!--[if lt IE 9]>
@@ -23,7 +25,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Add these lines in the <head> section of your HTML -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/popup.js" defer></script>
 <style>
+
+	.fixed-widget {
+					position: fixed;
+					bottom: 20px; /* Adjust this value to change the vertical position */
+					z-index: 1000; /* Make sure it's above other content */
+					transition: transform 0.1s ease; /* Add smooth animation to the widget */
+			}
+
+			.whatsapp-widget {
+					right: 20px; /* Adjust this value to change the horizontal position */
+			}
+
+			.email-widget {
+					right: 100px; /* Adjust this value to change the horizontal position */
+			}
+
+			.youtube-widget {
+					right: 180px; /* Adjust this value to change the horizontal position */
+			}
+
+
+			.fixed-widget img:hover {
+					transform: scale(0.2); /* Scale up the icon on hover */
+			}
+
+
 .gallery1{
 	width:250px;
 }
@@ -57,7 +91,7 @@
 }
 
 #zoom:hover {
-  transform:scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -83,12 +117,45 @@ transform:scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go
 		color:green;
 		font-family: serif;
 	}
+
+
+  .container1 {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+	 font-size: 15px;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+	.new{
+		background-image:url('images/q.jpg');
+		border-radius: 25px;
+	  padding: 25px;
+	}
+
+
 </style>
 
 	</head>
 
 
-	<body style="background-color:#dfd3c3">
+	<body style="background-image:url('images/p.jpg')">
 
 
 
@@ -96,25 +163,31 @@ transform:scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go
 
 
 		<div class="site-content">
-			<header style="background-color:#dfd3c3"class="site-header">
+			<header style="background-image:url('images/p.jpg')"class="site-header">
 				<div class="container">
-							<h3 class="liststyle1"  style="text-align:center;color:#8f7655">
-					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"  </h3>
+							<h5 class="liststyle1"  style="text-align:center;color:#8f7655">
+					"Upon this rock I will build my church;and the gates of hell shall not prevail against it"</h5>
 				<h5 class="liststyle1"  style="text-align:center;color:grey">mathew 16:18</h5>
+        <br>
 				<a onclick="document.getElementById('id01').style.display='block'" class="branding">
-					<img src="images/logo.png" alt="" class="logo">
+					<img style="height:220px;width:200px" src="images/logo.png" alt="" class="logo">
 
 				</a>
-					<h3 class="maintitle">Henry Merriweather Memorial church <br> Kurichi</h3>
+        <br>
+        <br>
+					<h3 style="font-size:35px" class="maintitle">Henry Merriweather Memorial Church <br> Kurichi</h3>
 
 					<div class="main-navigation">
-						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
+						<button style="color:black" style="color:black" class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li  class="menu-item"><a href="index.html"><p class="liststyle1">Home</p></a></li>
 							<li class="menu-item"><a href="pastor.html"><p class="liststyle1">PASTOR</p></a></li>
 							<li class="menu-item"><a href="churchprojects.html"><p class="liststyle1">CHURCH PROJECTS</p></a></li>
+							<li class="menu-item"><a href="Educationalrequirements.html"><p class="liststyle1">FOR EDUCATION</p></a></li>
 							<li class="menu-item current-menu-item"><a href="events.html"><p class="liststyle1">EVENTS</p></a></li>
-
+							<li class="menu-item"><a href="gallery.html">
+									<p class="liststyle1">GALLERY</p>
+								</a></li>
 							<li class="menu-item"><a href="History.html"><p class="liststyle1">HISTORY</p></a></li>
 							<li class="menu-item"><a href="henrymerriweather.html"><p class="liststyle1">HENRY MERRIWEATHER</p></a></li>
 							<li class="menu-item"><a href="Aboutus.html"><p class="liststyle1">ABOUT US</p></a></li>
@@ -131,83 +204,371 @@ transform:scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go
 					<h2 style="font-family:serif" class="page-title">Events</h2>
 				</div>
 			</div>
+						<br>
 
-<div style="margin-top:10%">
-    <h1 style="font-family:serif;text-align:center">NO EVENTS FOR NOW.</h1>
-         <p style="color:red;font-size:22px;font-family:serif;text-align:center">To watch our past christmas celebration shows,Checkout our Youtube Channel.</p>
+<br>
+
+<br>
+
+
+						    <div  class="container1 ">
+
+						        <div  class="table-responsive">
+						            <table class="table">
+													<tr>
+														<th>DATE</th>
+														<th>TIME</th>
+														<th>EVENT</th>
+														<th>LOCATION</th>
+													</tr>
+													<tr>
+														<td>15-08-2023</td>
+														<td>7.15 AM to 7.45 AM</td>
+														<td>FLAG HOISTING FOR THE INDEPENDENCE DAY <br> சுதந்திர தினத்திற்கான கொடியேற்று விழா</td>
+														<td>CIGM.MM-CHURCH,KURICHI.</td>
+													</tr>
+													<tr>
+														<td>15-08-2023</td>
+														<td>9.00 AM TO 9.30 AM</td>
+														<td>FLAG HOISTING FOR THE INDEPENDENCE DAY <br> சுதந்திர தினத்திற்கான கொடியேற்று விழா</td>
+														<td>MERRIWEATHER ALL SAINTS CHURCH,VAIKKALMEDU.</td>
+													</tr>
+													<tr>
+														<td>13-09-2023</td>
+														<td>6.30 PM TO 9.00 PM</td>
+														<td>"A SPECIAL MEETING LED BY GOD'S SERVANT, MRS. PUNITHA STEVENSON." <br>
+															 "தேவ ஊழியர் புனிதா ஸ்டீவன்ஸன் அவர்களால் நடக்கப்பெறும் விஷேசித்த ஜெபக்கூடுகை" </td>
+														<td>CIGM.MM-CHURCH,KURICHI.</td>
+													</tr>
+													<tr>
+														<td>13-10-2023 to <br> 15-10-2023</td>
+														<td>7.00 PM TO 10.00 PM</td>
+														<td>GOSPEL CONVENTION MEETING <br> பிரதான தலைமை திருச்சபையில் சுவிசேஷ கூட்டம்,
+																</td>
+														<td>CIGM.MM-CHURCH,KURICHI.</td>
+													</tr>
+													<tr>
+														<td>05-11-2023</td>
+														<td>-</td>
+														<td>SPECIAL PRAYER FOR THE FOUNDATION STONE FOR THE CONSTRUCTION OF NEW CATHEDRAL, CONSTRUCTION INSIDE OF HEAD CHURCH PREMISE. <br>
+															 கட்டுமானப் பணிக்கு அடிக்கல் நாட்ட சிறப்பு பிரார்த்தனை,
+																தலைமை தேவாலய வளாகத்தில் கட்டப்பட உள்ள பேராலயத்திற்கான துவக்க ஜெபம்.
+															</td>
+														<td>CIGM.MM-CHURCH,KURICHI.</td>
+													</tr>
+													<tr>
+														<td>12-11-2023</td>
+														<td>-</td>
+														<td>SPECIAL DETICATION PRAYER FOR THE BRANCH CHURCH EXTENSION, CONSTRUCTION WORK STARTING.<br>
+															 கிளை திருச்சபை விரிவாக்கத்திற்கான சிறப்பு பிரார்த்தனை, கட்டுமானப் பணிகளின் தொடக்கம்.</td>
+														<td>MERRIWEATHER ALL SAINTS CHURCH,VAIKKALMEDU.</td>
+													</tr>
+													<!-- Add more rows for other events -->
+						            </table>
+						        </div>
+
+						</div>
+
+<br>
+<hr>
+<br>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+					<div class="new">
+
+
+            <div class="text-center">
+                <h1 style="font-family:serif;text-align:center" class="text-center my-4"> May 01 2024 </h1>
+								<p class="fsize" style="Text-align:justify">Our Vacation Bible School begins tomorrow,
+									and we're excited for the journey ahead! Your prayers and support are crucial to its success.
+								</p>
+								<p class="fsize" style="Text-align:justify">	" It's a time of learning, growth, and community building. "</p>
+									<p class="fsize" style="Text-align:justify">
+								Your prayers are invaluable and provide spiritual support for our children attending.
+							<br>
+								Your support in any form is deeply appreciated and helps us create a welcoming and enriching environment for our children.
+
+							</p>
+            </div>
+            <div class="text-center my-4">
+                <img src="images\VBS.jpg" class="img-fluid" alt="Event Poster" height="500">
+            </div>
+						</div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+					<div class="new">
+
+
+            <div class="text-center">
+                <h1 style="font-family:serif;text-align:center" class="text-center my-4">GOSPEL CONVENTION MEETING</h1>
+            </div>
+            <div class="text-center my-4">
+                <img src="images\Eventposter.jpg" class="img-fluid" alt="Event Poster" style="max-height: 500px;">
+            </div>
+						</div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+
+
+		<center>
+
+ 		 <div class="container">
+ 						<div class="embed-responsive embed-responsive-16by9">
+ 								<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/M5g4GghORAI?si=FHg38RzHo9CVx6xO" title="YouTube video player" allowfullscreen></iframe>
+ 						</div>
+ 				</div>
+
+ 				<!-- Include Bootstrap JS (Optional, for additional functionality) -->
+ 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 		 </center>
+
+
+
+
+    <br>
+		<hr>
+<br>
+
+
+
+
+						   <div class="container">                                                      <!--NEW CATHEDRAL -->
+						<div class="container new">
+					 <h1  style="font-family:serif;text-align:center" class="text-center my-4">COMMITTEE MEETING</h1>
+					 <div class="grid">
+						 <!-- Grid Folders with Images -->
+						 <div class="grid-item">
+							 <div class="fsize" style="Text-align:justify" class="folder-title">Planning the Future: New Cathedral Discussion at Mettur Dam - August 12, 2023</div>
+							 <br>
+							 <div id="Cmeet" class="folder-content carousel slide" data-ride="carousel">
+								 <div class="carousel-inner">
+									 <div class="carousel-item active">
+										 <img src="images/c1.jpeg" class="d-block w-100" alt="C meet 1">
+									 </div>
+									 <div class="carousel-item">
+										 <img src="images/c2.jpeg" class="d-block w-100" alt="C meet 2">
+									 </div>
+									 <div class="carousel-item">
+										 <img src="images/c3.jpeg" class="d-block w-100" alt="C meet 3">
+									 </div>
+									 <div class="carousel-item">
+										 <img src="images/c4.jpeg" class="d-block w-100" alt="C meet 4">
+									 </div>
+									 <div class="carousel-item">
+										 <img src="images/c5.jpeg" class="d-block w-100" alt="C meet 5">
+									 </div>
+									 									 <div class="carousel-item">
+										 <img src="images/c6.jpeg" class="d-block w-100" alt="Church Outing Image 5">
+									 </div>
+								 </div>
+								 <a class="carousel-control-prev" href="#Cmeet" role="button" data-slide="prev">
+									 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									 <span class="sr-only">Previous</span>
+								 </a>
+								 <a class="carousel-control-next" href="#Cmeet" role="button" data-slide="next">
+									 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									 <span class="sr-only">Next</span>
+								 </a>
+							 </div>
+							 <br>
+
+							 <p class="fsize" style="Text-align:justify">A significant meeting was convened by Pastor Wilson Bruce and our committee, drawing together by the peaceful shores of Mettur Dam.
+Against the backdrop of this tranquil setting, a pivotal conversation unfolded concerning our new cathedral project.
+Pastor Bruce's vision of seamlessly blending tradition and modernity in the cathedral's design was shared, encompassing soaring spires and intricate stained glass,encapsulating the essence of our faith.
+<br>
+Following our productive meeting, a shared meal was enjoyed,deepening the bonds of camaraderie as food and stories were exchanged,all set against the breathtaking panorama of Mettur Dam. With a unified commitment and a funding strategy encompassing donations,events,and grants,the transformation of this collective vision into reality is underway.
+<br>
+The unfolding journey ahead promises to be one of unity and faith, enriched by the serene beauty of Mettur Dam.</p>
+						 </div>
+						 <!-- Add more grid folders for other events if needed -->
+					 </div>
+					</div>
+</div>
+					<br>
+					<hr>
+					<br>
+                                                                                          <!--Excursion -->
+
+<div class="container">
+			<div class="container new">
+		 <h1  style="font-family:serif;text-align:center" class="text-center my-4">EXCURSION</h1>
+		 <div class="grid">
+			 <!-- Grid Folders with Images -->
+			 <div class="grid-item">
+				 <div class="fsize" style="Text-align:justify" class="folder-title">Journey of Faith and Unity: Pastor Wilson Bruce and the Youth Team Excursion - July 28, 2023.</div>
+				 <br>
+				 <div id="churchOutingCarousel" class="folder-content carousel slide" data-ride="carousel">
+					 <div class="carousel-inner">
+						 <div class="carousel-item active">
+							 <img src="images/1.jpeg" class="d-block w-100" alt="Church Outing Image 1">
+						 </div>
+						 <div class="carousel-item">
+							 <img src="images/2.jpeg" class="d-block w-100" alt="Church Outing Image 2">
+						 </div>
+						 <div class="carousel-item">
+							 <img src="images/3.jpeg" class="d-block w-100" alt="Church Outing Image 3">
+						 </div>
+						 <div class="carousel-item">
+							 <img src="images/4.jpeg" class="d-block w-100" alt="Church Outing Image 4">
+						 </div>
+						 <div class="carousel-item">
+							 <img src="images/5.jpeg" class="d-block w-100" alt="Church Outing Image 5">
+						 </div>
+					 </div>
+					 <a class="carousel-control-prev" href="#churchOutingCarousel" role="button" data-slide="prev">
+						 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						 <span class="sr-only">Previous</span>
+					 </a>
+					 <a class="carousel-control-next" href="#churchOutingCarousel" role="button" data-slide="next">
+						 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						 <span class="sr-only">Next</span>
+					 </a>
+				 </div>
+				 <br>
+				 <p class="fsize" style="Text-align:justify"> On Friday, July 28, 2023, Pastor Reverend Wilson Bruce eagerly led the church's vibrant youth team on an exhilarating excursion to a serene nature reserve. The day was filled with laughter, camaraderie, and a deep connection with God's creation. As they embarked on this memorable journey, they shared reflections, engaged in heartfelt prayers, and participated in meaningful team-building activities that strengthened their bonds as a tight-knit community. With hearts overflowing with gratitude and cherished memories, they returned home, united and inspired to carry the light of faith and love into the world.</p>
+			 </div>
+			 <!-- Add more grid folders for other events if needed -->
+		 </div>
+		</div>
+	</div>
+
+<br>
+<hr>
+<br>
+<div class="col-md-12">
+    <h1 style="font-family:serif;text-align:center">HONOUR CEREMONY FOR THE RETIRED MEMBERS OF CHURCH</h1>
+        <br>
     </div>
    <div>
-       <center>	<a target="_blank" href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w">	<i style="color:#cd0a0a;font-size:50px" id="zoom" class="fa fa-youtube"></i></a>
-         </center>
+       <center>
+
+				 <div class="container">
+				        <div class="embed-responsive embed-responsive-16by9">
+				            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/idOHhy9nog4" title="YouTube video player" allowfullscreen></iframe>
+				        </div>
+				    </div>
+
+				    <!-- Include Bootstrap JS (Optional, for additional functionality) -->
+				    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+				 </center>
    </div>
-   <br>
-   <br>
+	 <br>
+  <br>
 	</body>
 
 			</main> <!-- .main-content -->
-			<footer style="background-color:#1b262c">
-  	    <br>
-			<div style="padding:0 5%" class=row>
-				<div style="text-align:center" class="col-md-4">
-					<a href="index.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HOME</p>
-						</button>
-					</a>
 
-					<a href="pastor.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">PASTOR</p>
-						</button>
-					</a>
+			<!-- Widgets -->
 
-					<a href="churchprojects.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
-						</button>
-					</a>
+	    		<div class="social-sidebar">
+	    				<!-- YouTube widget -->
+	    				<a href="https://www.youtube.com/channel/UCInd-trGhINhkeJ1tWM5P6w" target="_blank" class="social-icon">
+	    						<img style="height: 35px; width: 35px" src="images/y.png" alt="YouTube">
+	    				</a>
 
-				</div>
-				<div style="text-align:center" class="col-md-4">
-					<a href="events.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">EVENTS</p>
-						</button>
-					</a>
+	    				<!-- Location widget -->
+	    				<a href="https://goo.gl/maps/uvbrz8bkKrWh5kCJ7" target="_blank" class="social-icon">
+	    						<img style="height: 35px; width: 35px" src="images/l.png" alt="Location">
+	    				</a>
 
-					<a href="History.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">HISTORY</p>
-						</button>
-					</a>
+	    				<!-- Email widget -->
+	    				<a href="mailto:wilsonabruce72@gmail.com" class="social-icon">
+	    						<img style="height: 35px; width: 35px" src="images/m.png" alt="Email">
+	    				</a>
 
-						<a href="henrymerriweather.html">
-							<button style="width:100%" type="button" class="btn btn-outline:dark">
-								<p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
-							</button>
+	    				<!-- WhatsApp widget -->
+	    				<a href="https://api.whatsapp.com/send?phone=+919698044055" target="_blank" class="social-icon">
+	    						<img style="height: 35px; width: 35px" src="images/w.png" alt="WhatsApp Chat">
+	    				</a>
+	    		</div>
 
-						</a>
+	    		<!-- Widgets -->
 
-				</div>
 
-				<div style="text-align:center" class="col-md-4">
-					<a href="Aboutus.html">
-						<button style="width:100%" type="button" class="btn btn-outline:dark">
-							<p style="padding-top:3%" class="liststyle2">ABOUT US</p>
-						</button>
-					</a>
+					<footer style="background-color:#1b262c;height:100%">
+			      <br>
+			      <div style="padding:0 5%" class=row>
+			        <div style="text-align:center" class="col-md-4">
+			          <a href="index.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">HOME</p>
+			            </button>
+			          </a>
 
-				</div>
-				<br>
-			</div>
-<br>
-<div="container">
-		<p style="text-align:center;color:grey;font-size:15px"><span>&#169;</span> 2023 CIGM Merriweather Memorial church. All right reserved</p>
-		</div>
+			          <a href="pastor.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">PASTOR</p>
+			            </button>
+			          </a>
 
-<br>
+			          <a href="churchprojects.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">CHURCH PROJECTS</p>
+			            </button>
+			          </a>
 
-		</footer>
+			        </div>
+
+			        <div style="text-align:center" class="col-md-4">
+			          <a href="events.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">EVENTS</p>
+			            </button>
+			          </a>
+
+			          <a href="gallery.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">GALLERY</p>
+			            </button>
+
+			          </a>
+
+			          <a href="History.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">HISTORY</p>
+			            </button>
+			          </a>
+
+
+			        </div>
+
+			        <div style="text-align:center" class="col-md-4">
+
+			                      <a href="henrymerriweather.html">
+			                        <button style="width:100%" type="button" class="btn btn-outline:dark">
+			                          <p style="padding-top:3%" class="liststyle2">HENRY MERRIWEATHER</p>
+			                        </button>
+
+			                      </a>
+			          <a href="Aboutus.html">
+			            <button style="width:100%" type="button" class="btn btn-outline:dark">
+			              <p style="padding-top:3%" class="liststyle2">ABOUT US</p>
+			            </button>
+			          </a>
+
+			        </div>
+			        <br>
+			      </div>
+			  <br>
+			  <hr>
+			  <br>
+					 <!-- .row -->
+							<br>
+							<p style="text-align:center;color:grey;font-size:15px" ><span>&#169;</span>  2023 Henry Merriweather Memorial church. All right reserved</p>
+						</div><!-- .container -->
+					</footer> <!-- .site-footer -->
 		<script>
 	  // Set the date we're counting down to
 	  var countDownDate = new Date("Dec 25,2020 24:00:00").getTime();

@@ -1,0 +1,4 @@
+[05-May-2024 02:27:48 UTC] PHP Warning:  Undefined array key "email_address" in /home/hmmcin/public_html/send_mail.php on line 20
+[05-May-2024 02:27:48 UTC] PHP Warning:  Undefined array key "comments" in /home/hmmcin/public_html/send_mail.php on line 21
+[05-May-2024 02:27:48 UTC] PHP Warning:  Undefined array key "first_name" in /home/hmmcin/public_html/send_mail.php on line 22
+[05-May-2024 02:27:48 UTC] PHP Warning:  Undefined array key "number" in /home/hmmcin/public_html/send_mail.php on line 23

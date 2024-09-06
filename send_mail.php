@@ -3,7 +3,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "wilson@kurichichurch.org";
+$webmaster_email = "vickykarthik14@gmail.com";
 
 /*
 This bit sets the URLs of the supporting pages.
@@ -20,9 +20,11 @@ If you add a form field, you will need to add it here.
 $email_address = $_REQUEST['email_address'] ;
 $comments = $_REQUEST['comments'] ;
 $first_name = $_REQUEST['first_name'] ;
+$number = $_REQUEST['number'];
 $msg =
 "Name: " . $first_name . "\r\n" .
 "Email: " . $email_address . "\r\n" .
+"Contact_number :" .$number . " \r\n" .
 "Comments: " . $comments ;
 
 /*

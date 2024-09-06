@@ -87,7 +87,7 @@ h6 {
 .maintitle{
 	font-weight:bold;
 	color:#1b262c;
-	font-size:30px;
+	font-size:40px;
 	padding: 0 3%;
 	font-family: serif;
 }
@@ -105,6 +105,8 @@ h6 {
     font-size: 110%;
     font-family: serif;
 }
+
+
 /* all */
 /* images */
 #cf {
@@ -120,6 +122,55 @@ h6 {
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
+
+	    #zoom {
+	  padding:20px;
+	  transition:transform .1s;
+	  width:50px;
+	  height:50px;
+	  margin:0 auto;
+	}
+
+	#zoom:hover {
+	  transform:scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	}
+
+
+  /* Styles for left social media sidebar */
+  .social-sidebar {
+      position: fixed;
+      top: 50%; /* Adjust the position vertically */
+      left: 0;
+      transform: translateY(-50%); /* Vertically center the sidebar */
+      background-color: #333; /* Sidebar background color */
+      padding: 10px;
+      display: flex;
+      flex-direction: column; /* Arrange icons in a column */
+      align-items: center; /* Center icons horizontally */
+  }
+
+  /* Styles for social media icons */
+  .social-icon {
+      display: block;
+      color: #fff; /* Text color */
+      font-size: 24px; /* Icon size */
+      margin: 10px 0; /* Adjust spacing between icons */
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s ease; /* Add hover effect */
+  }
+
+  /* Add hover effect on social media icons */
+  .social-icon:hover {
+      transform: scale(1.2); /* Scale up the icon on hover */
+  }
+
+  /* Content styles to push content away from the sidebar */
+  .content {
+      margin-left: 120px; /* Adjust for sidebar width + padding */
+      padding: 20px;
+  }
+
 
 #cf img.top:hover {
   opacity:0;
